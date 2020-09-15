@@ -1,0 +1,7 @@
+https://blog.csdn.net/wqwqwqwq403/article/details/91048160
+——————————————————————————————————————————————————————————
+按某个属性GROUP BY后，同一个单元格会出现多个数据的情况。
+执行SELECT时，只返回单元格中的排序第一个值。
+需要使用聚合函数（COUNT、SUM、MAX等），可以对输入的多个函数，输出一个数据。
+以SUM(CASE WHEN month='Feb' THEN revenue END) 为例，当id=1时，它提取的Jan、Feb、Mar，从中找到了符合条件的Feb
+
